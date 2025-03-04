@@ -1,0 +1,413 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sniglet', cursive;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(238, 238, 238, 0.8)
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+nav.black{
+    background: white;
+    height: 90px;
+    padding: 10px 50px;
+}
+nav .logo{
+    float: left;
+    padding-right: 50px;    
+}
+nav .logo img{
+    height: 60px;
+    transition: .5s;
+}
+nav.black .logo img{
+    height: 60px;
+}
+nav ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 100px;
+    color: black;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #4CAF50;
+}
+.footer{
+    border-top: .5px solid white;
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center; 
+    margin-top: auto;
+}
+.headline h1{
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+}
+.headline .border{
+    width: 100px;
+    height: 10px;
+    background: #4CAF50;
+    margin: 30px auto;
+}
+
+.article-headline h1{
+    text-align: center;
+    color: black;
+    margin-top: 200px;
+}
+
+.article-headline .border{
+    width: 100px;
+    height: 10px;
+    background: #4CAF50;
+    margin: 0 auto;
+}
+
+section.sec1a{
+    width: 100%;
+    height: 100vh;
+    background: url(images/image9.jpg);
+    background-size: cover;
+}
+section.content1a{
+    padding: 70px 200px 20px 200px;
+}
+section.content1a .card{
+    display: inline-block;
+    width: 300px;
+    background: white;
+    margin: 0px 0px 50px 50px;
+    box-shadow: 0px 0px 1px black;
+}
+section.content1a .card .imgcard img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+section.content1a .card .title{
+    color: #4CAF50;
+    margin-left: 20px;
+}
+section.content1a .card .des p{
+    margin-left :20px;
+    margin-right: 20px;
+}
+section.content1a .card .artbtn button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-family: 'Sniglet', cursive;
+    cursor: pointer;
+}
+section.content1a .card .artbtn button:hover{
+    background-color: #4CAF50;
+    transition: .2s;
+}
+section.content2a{
+    padding: 0px 0px 0px 100px;
+}
+section.content2a .vcard{
+    display: inline-block;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 0px;
+    background: white;
+    width: 427px;
+    height: 500px;
+    box-shadow: 0px 0px 1px black;
+}
+section.content2a .vcard iframe{
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 300px;
+}
+section.content2a .vcard .title{
+    margin-left: 20px;
+    color: #4CAF50;
+}
+section.content2a .vcard .des p{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+section.content2a .vcard .artbtn button{
+    margin-bottom: 15px;
+    margin-left: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-family: 'Sniglet', cursive;
+    cursor: pointer;
+}
+section.content2a .vcard .artbtn button:hover{
+    background-color: #4CAF50;
+    transition: .4s;
+}
+section.content3a .contact-section{
+    padding: 40px 0;
+    background:white;
+    box-shadow: 0px 0px 1px black;
+}
+section.content3a .contact-section h1{
+    text-align: center;
+    color: black;
+}
+section.content3a .border{
+    width: 100px;
+    height: 10px;
+    background: #4CAF50;
+    margin: 40px auto;
+}
+section.content3a .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+section.content3a .contact-form-text{
+    font-family: 'Sniglet', cursive;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border-color: black;
+    padding: 20px 20px;
+    outline: none;
+    color: rgb(139, 139, 139);
+    transition: 0.5s;
+}
+section.content3a .contact-form-text:focus{
+    box-shadow: 0 0 1px 1px black;
+}
+section.content3a textarea.contact-form-text{
+    resize: none;
+    height: 160px;
+    border: 2px solid black;
+}
+section.content3a .contact-form-btn{
+    float: right;
+    border: 0;
+    background: black;
+    color: #fff;
+    padding: 12px 60px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+section.content3a .contact-form-btn:hover{
+    background-color: #4CAF50;
+    transition: .2s;
+}
+section.sec1b{
+    width: 100%;
+    height: 100vh;
+    background: url(images/image11.jpg);
+    background-size: cover;
+}
+section.content1b{
+    padding: 70px 200px 200px 200px;
+}
+section.content1b img{
+    width: 70%;
+    margin-bottom: 50px;
+}
+section.content1b h1{
+    margin-bottom: 50px;
+    padding: 0;
+    font-size: 36px;
+    color: #18CC5A;
+}
+section.content1b p{
+    margin: 20px 0 30px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+section.sec1c{
+    width: 100%;
+    height: 100vh;
+    background: url(images/image3.jpg);
+    background-size: cover;
+}
+section.content1c{
+    padding: 70px 200px 200px 200px;
+}
+section.content1c img{
+    width: 55%;
+    height: auto;
+}
+section.content1c h1{
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    line-height: 100px;
+    color: #18CC5A;
+}
+section.content1c p{
+    margin: 20px 0 30px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+section.sec1d{
+    width: 100%;
+    height: 100vh;
+    background: url(./images/image63.jpg);
+    background-size: cover;
+}
+section.contentd{
+    padding: 70px 200px 200px 200px;
+}
+section.contentd img{
+    width: 100%;
+}
+section.contentd h1{
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    line-height: 150px;
+    color: #18CC5A;
+}
+section.contentd p{
+    margin: 20px 0 30px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+section.sec1e{
+    width: 100%;
+    height: 100vh;
+    background: url(./images/image4.jpeg);
+    background-size: cover;
+}
+section.content1e{
+    width: 100%;
+    height: 800px;
+   
+    margin-bottom: 0px;
+}
+section.content1e h1{
+    text-align: center;
+    color: black;
+    margin-top: 80px;
+}
+section.content1e .border{
+    width: 100px;
+    height: 10px;
+    background: #4CAF50;
+    margin: 30px auto;
+}
+section.content1e .form-box{
+	width: 380px;
+	height: 480px;	
+	position: absolute;
+	margin: 5% 570px;
+	background: #fff;
+	padding: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 1px 0px #000;
+}
+section.content1e .button-box{
+	width: 206px;
+	margin: 40px auto;
+	position: relative;
+	box-shadow: 0 0 1px 0px #000;
+	border-radius: 10px;
+}
+section.content1e .toggle-btn{
+	padding: 10px 30px 10px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+section.content1e #btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 96px;
+	height: 100%;
+ 	background: #4CAF50;
+	border-radius: 10px;
+	transition: .5s; 	
+}
+section.content1e .input-group{
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+section.content1e .input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+section.content1e .check-box{
+	margin: 30px 10px 30px 0;
+}
+section.content1e .submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: 10px auto;
+    background-color: black;
+    color: white;
+	border: 0;
+	outline: none;
+	border-radius: 5px;
+}
+section.content1e .submit-btn:hover{
+    background-color: #4CAF50;
+    transition: .2s;
+}
+section.content1e #login{
+	left: 50px;
+}
+section.content1e #register{
+	left: 450px;
+}
